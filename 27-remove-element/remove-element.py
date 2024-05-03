@@ -6,12 +6,6 @@ class Solution:
         if reverse_index == -1:
             return 0
 
-        if reverse_index == 0:
-            if nums[index] == val:
-                return 0
-            else:
-                return 1
-
         while index != reverse_index:
             if nums[index] == val:
                 while nums[reverse_index] == val:
