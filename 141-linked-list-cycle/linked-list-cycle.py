@@ -9,10 +9,7 @@ class Solution:
         fast_node = head
         slow_node = head
 
-        if not head or not head.next:
-            return False
-        
-        if not head.next.next:
+        if not head or not head.next or not head.next.next:
             return False
         
         while slow_node.next or fast_node.next:
