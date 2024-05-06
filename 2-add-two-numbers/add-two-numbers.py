@@ -9,7 +9,6 @@ class Solution:
         sum_list = ListNode()
         sum_list_beginning = sum_list
         while l1 or l2 or carry:
-            print("Iteration")
             if l1:
                 val1 = l1.val
             else:
